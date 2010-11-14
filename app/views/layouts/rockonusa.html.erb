@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <title>Rockon U.S.A</title>
+        <%= stylesheet_link_tag 'rockonusa', :media => "all" %>
+        <!-- Kwicks menu -->
+    <%= stylesheet_link_tag 'style', :media => "all" %>
+        <script type='text/javascript' src='javascripts/jquery-1.4.2.min.js'></script>
+        <script type='text/javascript' src='javascripts/kwicks.js'></script>
+        <script type='text/javascript' src='javascripts/custom.js'></script>
+        <!-- Kwicks--><!-- Slider -->
+        <script type='text/javascript' src='javascripts/jquery-ui-1.8.2.custom.min.js'></script><!-- Slider -->
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <%= image_tag("rockon_logo.jpg") %>
+                <br>
+                <br>
+            </div>
+            <div>
+                <ul class="kwicks">
+                    <li id="kwick1">
+                        <%= link_to "Home", { :action => "index" , :controller => "home" } %>
+                    </li>
+                    <li id="kwick2">
+                        <%= link_to "Projects", { :action => "index" , :controller => "projects" } %>
+                    </li>
+                    <li id="kwick3">
+                        <%= link_to "About Us", { :action => "index" , :controller => "aboutus" } %>
+                    </li>
+                    <li id="kwick4">
+                        <%= link_to "Contact", { :action => "index" , :controller => "contactus" } %>
+                    </li>
+                </ul>
+            </div>
+            <!-- div id="menu">
+            <%= link_to "Home", { :action => "index" , :controller => "home" } %>
+            &nbsp; &nbsp; &nbsp; &nbsp; <%= link_to "Projects", { :action => "index" , :controller => "projects" } %>
+            &nbsp; &nbsp; &nbsp; &nbsp; <%= link_to "About Us", { :action => "index" , :controller => "aboutus" } %>
+            </div>
+            -->
+            <div class="clear">
+            </div>
+            <div id="main">
+                <%= yield :layout %>
+                <div class="clear">
+                </div>
+            </div>
+            <div id="footer">
+              <div style="text-align:left; float:left;">
+                   &copy; 2010 Copyright Rockon USA
+              </div>
+              <div style="text-align:right;">
+                    &nbsp;<%= link_to "Disclaimers", { :action => "index" , :controller => "disclaimers" } %> |
+                    &nbsp;<%= link_to "Terms and Conditions", { :action => "index" , :controller => "terms" } %>
+                    </div>
+                    <div style="text-align: right;">
+                    <br>
+                    &nbsp;<a href="http://twitter.com/everestpartners" target="_blank" title="Follow us on Twitter @rockon"><%= image_tag("twitter.png", :size=> "35x35", :border=>0) %></a>
+                    &nbsp;<a href="http://www.facebook.com/pages/EverestPartners/182695289435" target="_blank" title="Become a fan"><%= image_tag("facebook.png", :size=> "35x35", :border=>0) %></a>
+                    &nbsp;<a href="http://everestpartners.wordpress.com" target="_blank" title="We Blog"><%= image_tag("wordpress.png", :size=> "35x35", :border=>0) %></a>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -12495,3 +12495,3547 @@ Processing ContactusController#index (for 127.0.0.1 at 2010-11-14 17:42:28) [GET
 Rendering template within layouts/rockonusa
 Rendering contactus/index
 Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/contactus]
+  [4;36;1mSQL (169.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 14:37:46) [GET]
+  [4;36;1mHome Load (287.5ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 827ms (View: 409, DB: 546) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 14:37:56) [GET]
+  [4;35;1mServicesandproduct Load (0.0ms)[0m   [0mMysql::Error: Table 'rockonusa_development.servicesandproducts' doesn't exist: SELECT * FROM `servicesandproducts` [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'rockonusa_development.servicesandproducts' doesn't exist: SELECT * FROM `servicesandproducts` ):
+  app/controllers/servicesandproducts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (114.7ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (18.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHomes (20101023040829)
+Migrating to CreateProjects (20101023040837)
+Migrating to CreateAboutus (20101023040853)
+Migrating to CreateContactus (20101023040905)
+Migrating to CreateDisclaimers (20101023050453)
+Migrating to CreateTerms (20101023050501)
+Migrating to CreateServicesandproducts (20101119203549)
+  [4;36;1mSQL (81.6ms)[0m   [0;1mCREATE TABLE `servicesandproducts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (26.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101119203549')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (83.4ms)[0m   [0mSHOW FIELDS FROM `aboutus`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mdescribe `aboutus`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW KEYS FROM `aboutus`[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mSHOW FIELDS FROM `contactus`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `contactus`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `contactus`[0m
+  [4;35;1mSQL (22.7ms)[0m   [0mSHOW FIELDS FROM `disclaimers`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mdescribe `disclaimers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `disclaimers`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `homes`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mdescribe `homes`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW KEYS FROM `homes`[0m
+  [4;35;1mSQL (17.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mdescribe `projects`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `projects`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `servicesandproducts`[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mdescribe `servicesandproducts`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `servicesandproducts`[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mSHOW FIELDS FROM `terms`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `terms`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `terms`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 14:39:35) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/servicesandproducts
+Rendering servicesandproducts/index
+Completed in 107ms (View: 102, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 14:40:12) [GET]
+  [4;35;1mHome Load (0.5ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 56ms (View: 49, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 14:40:19) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/servicesandproducts
+Rendering servicesandproducts/index
+Completed in 78ms (View: 2, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 14:40:46) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHomes (20101023040829)
+Migrating to CreateProjects (20101023040837)
+Migrating to CreateAboutus (20101023040853)
+Migrating to CreateContactus (20101023040905)
+Migrating to CreateDisclaimers (20101023050453)
+Migrating to CreateTerms (20101023050501)
+Migrating to CreateServicesandproducts (20101119203549)
+Migrating to CreatePastprojects (20101119204126)
+  [4;36;1mSQL (126.0ms)[0m   [0;1mCREATE TABLE `pastprojects` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101119204126')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `aboutus`[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mdescribe `aboutus`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `aboutus`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `contactus`[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mdescribe `contactus`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `contactus`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `disclaimers`[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mdescribe `disclaimers`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `disclaimers`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSHOW FIELDS FROM `homes`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `homes`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `homes`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSHOW FIELDS FROM `pastprojects`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `pastprojects`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `pastprojects`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `projects`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `projects`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `servicesandproducts`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mdescribe `servicesandproducts`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `servicesandproducts`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `terms`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `terms`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW KEYS FROM `terms`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-19 14:43:27) [GET]
+  [4;36;1mPastproject Load (0.3ms)[0m   [0;1mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/pastprojects
+Rendering pastprojects/index
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-19 14:44:38) [GET]
+  [4;35;1mPastproject Load (0.3ms)[0m   [0mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/pastprojects
+Rendering pastprojects/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-19 14:45:21) [GET]
+  [4;36;1mPastproject Load (0.3ms)[0m   [0;1mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-19 14:46:47) [GET]
+  [4;35;1mPastproject Load (0.3ms)[0m   [0mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-19 14:49:37) [GET]
+  [4;36;1mPastproject Load (0.3ms)[0m   [0;1mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 14:53:03) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 14:58:05) [GET]
+  [4;36;1mHome Load (0.3ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 14:59:20) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:00:43) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:00:52) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:02:03) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:27:24) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:28:25) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 82ms (View: 77, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:28:49) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:33:04) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:33:42) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 87ms (View: 81, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 15:33:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/india/product.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:34:14) [GET]
+  [4;36;1mServicesandproduct Load (0.5ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:41:06) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:42:07) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:42:14) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:42:24) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:42:39) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:42:56) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-19 15:43:26) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-19 15:43:30) [GET]
+  [4;36;1mPastproject Load (0.4ms)[0m   [0;1mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-19 15:46:45) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:46:46) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:46:53) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:47:12) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:47:14) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:47:24) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:47:55) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:48:05) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:49:14) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 15:49:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/india/3dpanel_small.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:49:26) [GET]
+  [4;36;1mServicesandproduct Load (0.5ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 15:49:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/india/3Dpanel_small.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:49:33) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 15:49:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/india/3Dpanel_small.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:50:24) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:50:52) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 15:52:00) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-19 15:52:12) [GET]
+  [4;35;1mPastproject Load (0.4ms)[0m   [0mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-19 15:52:20) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-11-19 15:52:27) [GET]
+  [4;35;1mAboutu Load (0.4ms)[0m   [0mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/aboutus]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactusController#index (for 127.0.0.1 at 2010-11-19 15:52:32) [GET]
+  [4;36;1mContactu Load (0.3ms)[0m   [0;1mSELECT * FROM `contactus` [0m
+Rendering template within layouts/rockonusa
+Rendering contactus/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/contactus]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-19 15:52:33) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 15:52:35) [GET]
+  [4;36;1mHome Load (0.4ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-11-19 15:55:05) [GET]
+  [4;35;1mAboutu Load (0.4ms)[0m   [0mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 20ms (View: 6, DB: 1) | 200 OK [http://localhost/aboutus]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactusController#index (for 127.0.0.1 at 2010-11-19 15:55:06) [GET]
+  [4;36;1mContactu Load (0.4ms)[0m   [0;1mSELECT * FROM `contactus` [0m
+Rendering template within layouts/rockonusa
+Rendering contactus/index
+Completed in 31ms (View: 6, DB: 1) | 200 OK [http://localhost/contactus]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-19 15:55:07) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 15:55:18) [GET]
+  [4;36;1mHome Load (0.3ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 16:00:06) [GET]
+  [4;35;1mHome Load (0.3ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:00:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/bgContent2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-19 16:00:11) [GET]
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:00:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/bgContent2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-11-19 16:00:13) [GET]
+  [4;35;1mAboutu Load (0.4ms)[0m   [0mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/aboutus]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:00:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/bgContent2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactusController#index (for 127.0.0.1 at 2010-11-19 16:00:14) [GET]
+  [4;36;1mContactu Load (0.3ms)[0m   [0;1mSELECT * FROM `contactus` [0m
+Rendering template within layouts/rockonusa
+Rendering contactus/index
+Completed in 89ms (View: 83, DB: 1) | 200 OK [http://localhost/contactus]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:00:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/bgContent2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 16:00:15) [GET]
+  [4;35;1mHome Load (0.3ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (3.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:00:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/bgContent2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 16:01:08) [GET]
+  [4;36;1mHome Load (0.3ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 16:02:23) [GET]
+  [4;35;1mHome Load (0.4ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 16:02:53) [GET]
+  [4;36;1mHome Load (0.3ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:02:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/india/home.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 16:02:54) [GET]
+  [4;35;1mHome Load (0.3ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:02:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/india/home.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 16:03:03) [GET]
+  [4;36;1mHome Load (0.4ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:04:29) [GET]
+
+ActionController::RoutingError (No route matches "/productsandservcies" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:04:38) [GET]
+
+ActionController::RoutingError (No route matches "/productsandservices" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:04:44) [GET]
+
+ActionController::RoutingError (No route matches "/productandservices" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:05:08) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 16:05:56) [GET]
+  [4;36;1mHome Load (0.3ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:06:14) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:18:43) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:43) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:43) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:43) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:43) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:43) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:43) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (3.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:43) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:43) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:43) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:46) [GET]
+
+ActionController::RoutingError (No route matches "/photos/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:18:53) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:53) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:53) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:53) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:53) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:18:53) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:20:39) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 96ms (View: 91, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:20:40) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:20:40) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:20:40) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:20:40) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:20:40) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:20:40) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:20:40) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:20:40) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:20:40) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:21:07) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:07) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:07) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:07) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:08) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/lighbox/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:08) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:08) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:08) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:08) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:09) [GET]
+
+ActionController::RoutingError (No route matches "/photos/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:21:11) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/lighbox/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:11) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:11) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:11) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:11) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/lighbox/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:21:21) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/lighbox/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:21) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:21) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:21) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:22) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:21:59) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:59) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:59) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:59) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:59) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:21:59) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:22:00) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:22:00) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:22:00) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:22:04) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:22:04) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:22:04) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:22:04) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:22:04) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:23:29) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:23:29) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:23:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:23:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:23:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:24:54) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:24:54) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:24:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:24:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:24:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:26:11) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:26:11) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:26:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:26:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:26:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:26:29) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 16:26:29) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 16:27:04) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+ERROR: compiling _run_erb_app47views47servicesandproducts47index46html46erb RAISED compile error
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+            </a>
+             ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:44: unknown regexp option - l
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:45: syntax error, unexpected '<'
+        <li class="product">
+         ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:46: syntax error, unexpected '<'
+          <br><br><br><%= image_tag("../i...
+           ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:46: syntax error, unexpected ')', expecting kEND
+...g", :size=> "200x150") ).to_s); @output_buffer.concat "\n   ...
+                              ^
+Function body:           def _run_erb_app47views47servicesandproducts47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( stylesheet_link_tag 'slider', :media => "all" ).to_s); @output_buffer.concat "\n\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../style-projects-jquery.css\" />    \n    \n    <!-- Arquivos utilizados pelo jQuery lightBox plugin -->\n    <script type=\"text/javascript\" src=\"javascripts/jquery.js\"></script>\n    <script type=\"text/javascript\" src=\"javascripts/jquery.lightbox-0.5.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheets/jquery.lightbox-0.5.css\" media=\"screen\" />\n    <!-- / fim dos arquivos utilizados pelo jQuery lightBox plugin -->\n    \n    <!-- Ativando o jQuery lightBox plugin -->\n    <script type=\"text/javascript\">\n    $(function() {\n        $('#gallery a').lightBox();\n    });\n    </script>\n    <style type=\"text/css\">\n  /* jQuery lightBox plugin - Gallery style */\n  #gallery {\n    background-color: #444;\n    padding: 10px;\n    width: 520px;\n  }\n  #gallery ul { list-style: none; }\n  #gallery ul li { display: inline; }\n  #gallery ul img {\n    border: 5px solid #3e3e3e;\n    border-width: 5px 5px 20px;\n  }\n  #gallery ul a:hover img {\n    border: 5px solid #fff;\n    border-width: 5px 5px 20px;\n    color: #fff;\n  }\n  #gallery ul a:hover { color: #fff; }\n  </style>\n  \n<div id=\"slider\">\n    <ul>\n        <li\">\n           <a href=\"../images/india/product.gif\" title=\"Utilize a flexibilidade dos seletores da jQuery e crie um grupo de imagens como desejar. $('#gallery').lightBox();\">\n                "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( image_tag("../images/india/product.jpg", :size=> "200x150")
+            </a>
+        </li>  
+        <li class="product">
+          <br><br><br><%= image_tag("../images/india/3dpanel_small.jpg", :size=> "200x150") ).to_s); @output_buffer.concat "\n        </li>  \n    </ul>\n</div>\n\n<div id=\"text_slider\">\n   <p>\n     <ul>\n        <li id=\"services\">\n                <b>Our Services</b><br>\nRockon offers you an innovative way to build using pre-built panel systems, sometimes referred to as panelized \nbuilding system. Building with pre-built panel systems has the advantage of factory controlled precision. \nPre-manufacture red panel systems are created using CAD computer technology, high-tech cutting saws and built \nunder strict design and quality control supervision.\n\nRockon can work from virtually any building plan to provide you with an accurate construction quote. If you do \nnot currently have a plan or you wish to modify an existing plan our experienced design staff will be glad to \nwork with you on designing your dream home or Commercial building.\n </p>\n </li>\n <li id=\"product\">\n <p>\n   <b>Product</b><br>\n   Rockon Construction System can be employed not only for residential but also for theatre, school, office \n   buildings, high \342\200\223rise buildings, stadiums, hospitals, convention centres, military barracks and warehouses, \n   just to name a few.\n\nWhereas, the Rockon Construction System Pvt Ltd in India, supplies the panel material needed for the monolithic \nconstruction, Hawthorne Builders Pvt Ltd, will act as your construction company to execute your projects using \nthe Rockon technology.\n </p>\n </li>\n </ul>\n<div id=\"gallery\">\n    <ul>\n        <li>\n            <a href=\"../images/india/product.gif\" title=\"Utilize a flexibilidade dos seletores da jQuery e crie um grupo de imagens como desejar. $('#gallery').lightBox();\">\n                <img src=\"../images/india/product.gif\" width=\"72\" height=\"72\" alt=\"\" />\n            </a>\n        </li>\n    </ul>\n</div>\n</div>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:91:in `compile!'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:265:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:262:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/controllers/servicesandproducts_controller.rb:7:in `index'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1331:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+            </a>
+             ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:44: unknown regexp option - l
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:45: syntax error, unexpected '<'
+        <li class="product">
+         ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:46: syntax error, unexpected '<'
+          <br><br><br><%= image_tag("../i...
+           ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:46: syntax error, unexpected ')', expecting kEND
+...g", :size=> "200x150") ).to_s); @output_buffer.concat "\n   ...
+                              ^) on line #43 of app/views/servicesandproducts/index.html.erb:
+40:         <li">
+41:            <a href="../images/india/product.gif" title="Utilize a flexibilidade dos seletores da jQuery e crie um grupo de imagens como desejar. $('#gallery').lightBox();">
+42:                 <%= image_tag("../images/india/product.jpg", :size=> "200x150")
+43:             </a>
+44:         </li>  
+45:         <li class="product">
+46:           <br><br><br><%= image_tag("../images/india/3dpanel_small.jpg", :size=> "200x150") %>
+
+    app/views/servicesandproducts/index.html.erb:91:in `compile!'
+    app/controllers/servicesandproducts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 22:14:43) [GET]
+  [4;35;1mHome Load (0.3ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 23:15:36) [GET]
+  [4;36;1mHome Load (0.4ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactusController#index (for 127.0.0.1 at 2010-11-19 23:15:39) [GET]
+  [4;35;1mContactu Load (0.3ms)[0m   [0mSELECT * FROM `contactus` [0m
+Rendering template within layouts/rockonusa
+Rendering contactus/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/contactus]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-11-19 23:15:41) [GET]
+  [4;36;1mAboutu Load (0.4ms)[0m   [0;1mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/aboutus]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-19 23:15:42) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 23:15:44) [GET]
+  [4;36;1mHome Load (0.3ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 23:15:58) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+ERROR: compiling _run_erb_app47views47servicesandproducts47index46html46erb RAISED compile error
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:50: syntax error, unexpected '<', expecting ')'
+            </a>
+             ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:51: unknown regexp option - l
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:52: syntax error, unexpected '<'
+        <li class="product">
+         ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:53: syntax error, unexpected '<'
+          <br><br><br><%= image_tag("../i...
+           ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:53: syntax error, unexpected ')', expecting kEND
+...g", :size=> "200x150") ).to_s); @output_buffer.concat "\n   ...
+                              ^
+Function body:           def _run_erb_app47views47servicesandproducts47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( stylesheet_link_tag 'slider', :media => "all" ).to_s); @output_buffer.concat "\n\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../style-projects-jquery.css\" />    \n    \n    <!-- Arquivos utilizados pelo jQuery lightBox plugin -->\n    <script type=\"text/javascript\" src=\"javascripts/jquery.js\"></script>\n    <script type=\"text/javascript\" src=\"javascripts/jquery.lightbox-0.5.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheets/jquery.lightbox-0.5.css\" media=\"screen\" />\n    <!-- / fim dos arquivos utilizados pelo jQuery lightBox plugin -->\n    \n    <!-- Ativando o jQuery lightBox plugin -->\n    <script type=\"text/javascript\">\n    $(function() {\n        $('#gallery a').lightBox();\n    });\n    </script>\n    <style type=\"text/css\">\n  /* jQuery lightBox plugin - Gallery style */\n  #gallery {\n    background-color: #444;\n    padding: 10px;\n    width: 520px;\n  }\n  #gallery ul { list-style: none; }\n  #gallery ul li { display: inline; }\n  #gallery ul img {\n    border: 5px solid #3e3e3e;\n    border-width: 5px 5px 20px;\n  }\n  #gallery ul a:hover img {\n    border: 5px solid #fff;\n    border-width: 5px 5px 20px;\n    color: #fff;\n  }\n  #gallery ul a:hover { color: #fff; }\n  </style>\n  \n<div id=\"slider\">\n    <ul>\n        <li\">\n           <a href=\"../images/india/product.gif\" title=\"The construction system is a unique and effective way to easily create a strong insulated concrete building or wall. construction systems are used in every type of concrete structure because of the flexibility of design and ease of use. Thousands of structure and walls have been built around the world with construction systems. Many of them use the panel for all elements of the structure including walls, floors, stairs and trim. construction system is used for affordable housing all the way to multi-million dollar housing. Residential, commercial, institutional multi-story all can be created easily with this remarkable code-approved method.\n\nThe strength of the 3D system is enormous and is partially attributed to the truss wires which are welded to connect each side of mesh to make the panel. The insulation in the center of the panel is suspended on the truss wires and becomes a continuous thermal break when panels are connected. The performance of the insulation thus is greater than the R-value rating because of the thermal-mass effect of the concrete on each side of the panel.\n\nThe monolithic structure with construction system enables it to withstand earthquakes, hurricanes and typhoons. Many 3D buildings have endured hurricanes with no water penetration or damage, earthquakes with no cracking, and at the same time provided a comfortable and energy-efficient environment for the residents. In the U. S. today there is a strong movement towards concrete housing. The construction system System is perfect for this market. It provides hard walls and perfectly placed insulation for maximum efficiency. Stay-in-place forms today use polystyrene as molds for concrete and end up with soft exteriors and exteriors which have to be hardened. In the process, they lose the thermal mass effect necessary for energy efficiency. Unlike concrete block, the construction system provides the insulation and reinforcement strength to concrete which makes it acceptable for residential or commercial construction.\nSince the introduction of the construction system for construction of walls, several new uses have emerged for the panel. These are explained in the following pages. The construction system System has been described as Twenty First Century technology available today. Isn't it time for you to enjoy the pleasure of a construction system which provides long term durability and long term energy savings without compromising our natural resources? The revolution in construction technology has started and the StructurTech construction system is out in front!\n\n $('#gallery').lightBox();\">\n                "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( image_tag("../images/india/product.jpg", :size=> "200x150")
+            </a>
+        </li>  
+        <li class="product">
+          <br><br><br><%= image_tag("../images/india/3dpanel_small.jpg", :size=> "200x150") ).to_s); @output_buffer.concat "\n        </li>  \n    </ul>\n</div>\n\n<div id=\"text_slider\">\n   <p>\n     <ul>\n        <li id=\"services\">\n                <b>Our Services</b><br>\nRockon offers you an innovative way to build using pre-built panel systems, sometimes referred to as panelized \nbuilding system. Building with pre-built panel systems has the advantage of factory controlled precision. \nPre-manufacture red panel systems are created using CAD computer technology, high-tech cutting saws and built \nunder strict design and quality control supervision.\n\nRockon can work from virtually any building plan to provide you with an accurate construction quote. If you do \nnot currently have a plan or you wish to modify an existing plan our experienced design staff will be glad to \nwork with you on designing your dream home or Commercial building.\n </p>\n </li>\n <li id=\"product\">\n <p>\n   <b>Product</b><br>\n   Rockon Construction System can be employed not only for residential but also for theatre, school, office \n   buildings, high \342\200\223rise buildings, stadiums, hospitals, convention centres, military barracks and warehouses, \n   just to name a few.\n\nWhereas, the Rockon Construction System Pvt Ltd in India, supplies the panel material needed for the monolithic \nconstruction, Hawthorne Builders Pvt Ltd, will act as your construction company to execute your projects using \nthe Rockon technology.\n </p>\n </li>\n </ul>\n<div id=\"gallery\">\n    <ul>\n        <li>\n            <a href=\"../images/india/product.gif\" title=\"Utilize a flexibilidade dos seletores da jQuery e crie um grupo de imagens como desejar. $('#gallery').lightBox();\">\n                <img src=\"../images/india/product.gif\" width=\"72\" height=\"72\" alt=\"\" />\n            </a>\n        </li>\n    </ul>\n</div>\n</div>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:98:in `compile!'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:265:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:262:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/controllers/servicesandproducts_controller.rb:7:in `index'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1331:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:50: syntax error, unexpected '<', expecting ')'
+            </a>
+             ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:51: unknown regexp option - l
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:52: syntax error, unexpected '<'
+        <li class="product">
+         ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:53: syntax error, unexpected '<'
+          <br><br><br><%= image_tag("../i...
+           ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:53: syntax error, unexpected ')', expecting kEND
+...g", :size=> "200x150") ).to_s); @output_buffer.concat "\n   ...
+                              ^) on line #50 of app/views/servicesandproducts/index.html.erb:
+47: 
+48:  $('#gallery').lightBox();">
+49:                 <%= image_tag("../images/india/product.jpg", :size=> "200x150")
+50:             </a>
+51:         </li>  
+52:         <li class="product">
+53:           <br><br><br><%= image_tag("../images/india/3dpanel_small.jpg", :size=> "200x150") %>
+
+    app/views/servicesandproducts/index.html.erb:98:in `compile!'
+    app/controllers/servicesandproducts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (127.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-19 23:17:40) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+ERROR: compiling _run_erb_app47views47servicesandproducts47index46html46erb RAISED compile error
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:46: syntax error, unexpected '<', expecting ')'
+            </a>
+             ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:47: unknown regexp option - l
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:48: syntax error, unexpected '<'
+        <li class="product">
+         ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:49: syntax error, unexpected '<'
+          <br><br><br><%= image_tag("../i...
+           ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:49: syntax error, unexpected ')', expecting kEND
+...g", :size=> "200x150") ).to_s); @output_buffer.concat "\n   ...
+                              ^
+Function body:           def _run_erb_app47views47servicesandproducts47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( stylesheet_link_tag 'slider', :media => "all" ).to_s); @output_buffer.concat "\n\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../style-projects-jquery.css\" />    \n    \n    <!-- Arquivos utilizados pelo jQuery lightBox plugin -->\n    <script type=\"text/javascript\" src=\"javascripts/jquery.js\"></script>\n    <script type=\"text/javascript\" src=\"javascripts/jquery.lightbox-0.5.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheets/jquery.lightbox-0.5.css\" media=\"screen\" />\n    <!-- / fim dos arquivos utilizados pelo jQuery lightBox plugin -->\n    \n    <!-- Ativando o jQuery lightBox plugin -->\n    <script type=\"text/javascript\">\n    $(function() {\n        $('#gallery a').lightBox();\n    });\n    </script>\n    <style type=\"text/css\">\n  /* jQuery lightBox plugin - Gallery style */\n  #gallery {\n    background-color: #444;\n    padding: 10px;\n    width: 520px;\n  }\n  #gallery ul { list-style: none; }\n  #gallery ul li { display: inline; }\n  #gallery ul img {\n    border: 5px solid #3e3e3e;\n    border-width: 5px 5px 20px;\n  }\n  #gallery ul a:hover img {\n    border: 5px solid #fff;\n    border-width: 5px 5px 20px;\n    color: #fff;\n  }\n  #gallery ul a:hover { color: #fff; }\n  </style>\n  \n<div id=\"slider\">\n    <ul>\n        <li\">\n           <a href=\"../images/india/product.gif\" title=\"The construction system is a unique and effective way to easily create a strong insulated concrete building or wall. construction systems are used in every type of concrete structure because of the flexibility of design and ease of use. Thousands of structure and walls have been built around the world with construction systems. Many of them use the panel for all elements of the structure including walls, floors, stairs and trim. construction system is used for affordable housing all the way to multi-million dollar housing. Residential, commercial, institutional multi-story all can be created easily with this remarkable code-approved method. The strength of the 3D system is enormous and is partially attributed to the truss wires which are welded to connect each side of mesh to make the panel. The insulation in the center of the panel is suspended on the truss wires and becomes a continuous thermal break when panels are connected. The performance of the insulation thus is greater than the R-value rating because of the thermal-mass effect of the concrete on each side of the panel.\nThe monolithic structure with construction system enables it to withstand earthquakes, hurricanes and typhoons. Many 3D buildings have endured hurricanes with no water penetration or damage, earthquakes with no cracking, and at the same time provided a comfortable and energy-efficient environment for the residents. In the U. S. today there is a strong movement towards concrete housing. The construction system System is perfect for this market. It provides hard walls and perfectly placed insulation for maximum efficiency. Stay-in-place forms today use polystyrene as molds for concrete and end up with soft exteriors and exteriors which have to be hardened. In the process, they lose the thermal mass effect necessary for energy efficiency. Unlike concrete block, the construction system provides the insulation and reinforcement strength to concrete which makes it acceptable for residential or commercial construction.\nSince the introduction of the construction system for construction of walls, several new uses have emerged for the panel. These are explained in the following pages. The construction system System has been described as Twenty First Century technology available today. Isn't it time for you to enjoy the pleasure of a construction system which provides long term durability and long term energy savings without compromising our natural resources? The revolution in construction technology has started and the StructurTech construction system is out in front!\n$('#gallery').lightBox();\">\n                "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( image_tag("../images/india/product.jpg", :size=> "200x150")
+            </a>
+        </li>  
+        <li class="product">
+          <br><br><br><%= image_tag("../images/india/3dpanel_small.jpg", :size=> "200x150") ).to_s); @output_buffer.concat "\n        </li>  \n    </ul>\n</div>\n\n<div id=\"text_slider\">\n   <p>\n     <ul>\n        <li id=\"services\">\n                <b>Our Services</b><br>\nRockon offers you an innovative way to build using pre-built panel systems, sometimes referred to as panelized \nbuilding system. Building with pre-built panel systems has the advantage of factory controlled precision. \nPre-manufacture red panel systems are created using CAD computer technology, high-tech cutting saws and built \nunder strict design and quality control supervision.\n\nRockon can work from virtually any building plan to provide you with an accurate construction quote. If you do \nnot currently have a plan or you wish to modify an existing plan our experienced design staff will be glad to \nwork with you on designing your dream home or Commercial building.\n </p>\n </li>\n <li id=\"product\">\n <p>\n   <b>Product</b><br>\n   Rockon Construction System can be employed not only for residential but also for theatre, school, office \n   buildings, high \342\200\223rise buildings, stadiums, hospitals, convention centres, military barracks and warehouses, \n   just to name a few.\n\nWhereas, the Rockon Construction System Pvt Ltd in India, supplies the panel material needed for the monolithic \nconstruction, Hawthorne Builders Pvt Ltd, will act as your construction company to execute your projects using \nthe Rockon technology.\n </p>\n </li>\n </ul>\n<div id=\"gallery\">\n    <ul>\n        <li>\n            <a href=\"../images/india/product.gif\" title=\"Utilize a flexibilidade dos seletores da jQuery e crie um grupo de imagens como desejar. $('#gallery').lightBox();\">\n                <img src=\"../images/india/product.gif\" width=\"72\" height=\"72\" alt=\"\" />\n            </a>\n        </li>\n    </ul>\n</div>\n</div>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:94:in `compile!'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:265:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:262:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/controllers/servicesandproducts_controller.rb:7:in `index'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1331:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:46: syntax error, unexpected '<', expecting ')'
+            </a>
+             ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:47: unknown regexp option - l
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:48: syntax error, unexpected '<'
+        <li class="product">
+         ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:49: syntax error, unexpected '<'
+          <br><br><br><%= image_tag("../i...
+           ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:49: syntax error, unexpected ')', expecting kEND
+...g", :size=> "200x150") ).to_s); @output_buffer.concat "\n   ...
+                              ^) on line #46 of app/views/servicesandproducts/index.html.erb:
+43: Since the introduction of the construction system for construction of walls, several new uses have emerged for the panel. These are explained in the following pages. The construction system System has been described as Twenty First Century technology available today. Isn't it time for you to enjoy the pleasure of a construction system which provides long term durability and long term energy savings without compromising our natural resources? The revolution in construction technology has started and the StructurTech construction system is out in front!
+44: $('#gallery').lightBox();">
+45:                 <%= image_tag("../images/india/product.jpg", :size=> "200x150")
+46:             </a>
+47:         </li>  
+48:         <li class="product">
+49:           <br><br><br><%= image_tag("../images/india/3dpanel_small.jpg", :size=> "200x150") %>
+
+    app/views/servicesandproducts/index.html.erb:94:in `compile!'
+    app/controllers/servicesandproducts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (46.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 23:31:54) [GET]
+  [4;35;1mHome Load (0.9ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 44ms (View: 4, DB: 2) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (178.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-19 23:33:48) [GET]
+  [4;36;1mProject Load (994.6ms)[0m   [0;1mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 73535ms (View: 56215, DB: 1173) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (64.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (20.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-23 23:17:05) [GET]
+  [4;36;1mHome Load (80.0ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 224ms (View: 137, DB: 165) | 200 OK [http://localhost/]
+  [4;35;1mSQL (11.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-23 23:17:10) [GET]
+  [4;35;1mProject Load (41.1ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 167ms (View: 100, DB: 53) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-11-23 23:17:16) [GET]
+  [4;36;1mAboutu Load (26.3ms)[0m   [0;1mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 72ms (View: 21, DB: 27) | 200 OK [http://localhost/aboutus]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactusController#index (for 127.0.0.1 at 2010-11-23 23:17:20) [GET]
+  [4;35;1mContactu Load (0.7ms)[0m   [0mSELECT * FROM `contactus` [0m
+Rendering template within layouts/rockonusa
+Rendering contactus/index
+Completed in 46ms (View: 31, DB: 1) | 200 OK [http://localhost/contactus]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-23 23:17:22) [GET]
+  [4;36;1mHome Load (0.5ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:17:35) [GET]
+
+ActionController::RoutingError (No route matches "/servicesandproduct" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:17:39) [GET]
+  [4;35;1mServicesandproduct Load (0.6ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+ERROR: compiling _run_erb_app47views47servicesandproducts47index46html46erb RAISED compile error
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:46: syntax error, unexpected '<', expecting ')'
+            </a>
+             ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:47: unknown regexp option - l
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:48: syntax error, unexpected '<'
+        <li class="product">
+         ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:49: syntax error, unexpected '<'
+          <br><br><br><%= image_tag("../i...
+           ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:49: syntax error, unexpected ')', expecting kEND
+...g", :size=> "200x150") ).to_s); @output_buffer.concat "\n   ...
+                              ^
+Function body:           def _run_erb_app47views47servicesandproducts47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( stylesheet_link_tag 'slider', :media => "all" ).to_s); @output_buffer.concat "\n\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../style-projects-jquery.css\" />    \n    \n    <!-- Arquivos utilizados pelo jQuery lightBox plugin -->\n    <script type=\"text/javascript\" src=\"javascripts/jquery.js\"></script>\n    <script type=\"text/javascript\" src=\"javascripts/jquery.lightbox-0.5.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheets/jquery.lightbox-0.5.css\" media=\"screen\" />\n    <!-- / fim dos arquivos utilizados pelo jQuery lightBox plugin -->\n    \n    <!-- Ativando o jQuery lightBox plugin -->\n    <script type=\"text/javascript\">\n    $(function() {\n        $('#gallery a').lightBox();\n    });\n    </script>\n    <style type=\"text/css\">\n  /* jQuery lightBox plugin - Gallery style */\n  #gallery {\n    background-color: #444;\n    padding: 10px;\n    width: 520px;\n  }\n  #gallery ul { list-style: none; }\n  #gallery ul li { display: inline; }\n  #gallery ul img {\n    border: 5px solid #3e3e3e;\n    border-width: 5px 5px 20px;\n  }\n  #gallery ul a:hover img {\n    border: 5px solid #fff;\n    border-width: 5px 5px 20px;\n    color: #fff;\n  }\n  #gallery ul a:hover { color: #fff; }\n  </style>\n  \n<div id=\"slider\">\n    <ul>\n        <li\">\n           <a href=\"../images/india/product.gif\" title=\"The construction system is a unique and effective way to easily create a strong insulated concrete building or wall. construction systems are used in every type of concrete structure because of the flexibility of design and ease of use. Thousands of structure and walls have been built around the world with construction systems. Many of them use the panel for all elements of the structure including walls, floors, stairs and trim. construction system is used for affordable housing all the way to multi-million dollar housing. Residential, commercial, institutional multi-story all can be created easily with this remarkable code-approved method. The strength of the 3D system is enormous and is partially attributed to the truss wires which are welded to connect each side of mesh to make the panel. The insulation in the center of the panel is suspended on the truss wires and becomes a continuous thermal break when panels are connected. The performance of the insulation thus is greater than the R-value rating because of the thermal-mass effect of the concrete on each side of the panel.\nThe monolithic structure with construction system enables it to withstand earthquakes, hurricanes and typhoons. Many 3D buildings have endured hurricanes with no water penetration or damage, earthquakes with no cracking, and at the same time provided a comfortable and energy-efficient environment for the residents. In the U. S. today there is a strong movement towards concrete housing. The construction system System is perfect for this market. It provides hard walls and perfectly placed insulation for maximum efficiency. Stay-in-place forms today use polystyrene as molds for concrete and end up with soft exteriors and exteriors which have to be hardened. In the process, they lose the thermal mass effect necessary for energy efficiency. Unlike concrete block, the construction system provides the insulation and reinforcement strength to concrete which makes it acceptable for residential or commercial construction.\nSince the introduction of the construction system for construction of walls, several new uses have emerged for the panel. These are explained in the following pages. The construction system System has been described as Twenty First Century technology available today. Isn't it time for you to enjoy the pleasure of a construction system which provides long term durability and long term energy savings without compromising our natural resources? The revolution in construction technology has started and the StructurTech construction system is out in front!\n$('#gallery').lightBox();\">\n                "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( image_tag("../images/india/product.jpg", :size=> "200x150")
+            </a>
+        </li>  
+        <li class="product">
+          <br><br><br><%= image_tag("../images/india/3dpanel_small.jpg", :size=> "200x150") ).to_s); @output_buffer.concat "\n        </li>  \n    </ul>\n</div>\n\n<div id=\"text_slider\">\n   <p>\n     <ul>\n        <li id=\"services\">\n                <b>Our Services</b><br>\nRockon offers you an innovative way to build using pre-built panel systems, sometimes referred to as panelized \nbuilding system. Building with pre-built panel systems has the advantage of factory controlled precision. \nPre-manufacture red panel systems are created using CAD computer technology, high-tech cutting saws and built \nunder strict design and quality control supervision.\n\nRockon can work from virtually any building plan to provide you with an accurate construction quote. If you do \nnot currently have a plan or you wish to modify an existing plan our experienced design staff will be glad to \nwork with you on designing your dream home or Commercial building.\n </p>\n </li>\n <li id=\"product\">\n <p>\n   <b>Product</b><br>\n   Rockon Construction System can be employed not only for residential but also for theatre, school, office \n   buildings, high \342\200\223rise buildings, stadiums, hospitals, convention centres, military barracks and warehouses, \n   just to name a few.\n\nWhereas, the Rockon Construction System Pvt Ltd in India, supplies the panel material needed for the monolithic \nconstruction, Hawthorne Builders Pvt Ltd, will act as your construction company to execute your projects using \nthe Rockon technology.\n </p>\n </li>\n </ul>\n<div id=\"gallery\">\n    <ul>\n        <li>\n            <a href=\"../images/india/product.gif\" title=\"Utilize a flexibilidade dos seletores da jQuery e crie um grupo de imagens como desejar. $('#gallery').lightBox();\">\n                <img src=\"../images/india/product.gif\" width=\"72\" height=\"72\" alt=\"\" />\n            </a>\n        </li>\n    </ul>\n</div>\n</div>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:94:in `compile!'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:265:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_view/base.rb:262:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/controllers/servicesandproducts_controller.rb:7:in `index'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1331:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `send'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/vendor/rails/railties/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:46: syntax error, unexpected '<', expecting ')'
+            </a>
+             ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:47: unknown regexp option - l
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:48: syntax error, unexpected '<'
+        <li class="product">
+         ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:49: syntax error, unexpected '<'
+          <br><br><br><%= image_tag("../i...
+           ^
+/Users/raghu/My Folders/RaghuPlayground/rockonusa/app/views/servicesandproducts/index.html.erb:49: syntax error, unexpected ')', expecting kEND
+...g", :size=> "200x150") ).to_s); @output_buffer.concat "\n   ...
+                              ^) on line #46 of app/views/servicesandproducts/index.html.erb:
+43: Since the introduction of the construction system for construction of walls, several new uses have emerged for the panel. These are explained in the following pages. The construction system System has been described as Twenty First Century technology available today. Isn't it time for you to enjoy the pleasure of a construction system which provides long term durability and long term energy savings without compromising our natural resources? The revolution in construction technology has started and the StructurTech construction system is out in front!
+44: $('#gallery').lightBox();">
+45:                 <%= image_tag("../images/india/product.jpg", :size=> "200x150")
+46:             </a>
+47:         </li>  
+48:         <li class="product">
+49:           <br><br><br><%= image_tag("../images/india/3dpanel_small.jpg", :size=> "200x150") %>
+
+    app/views/servicesandproducts/index.html.erb:94:in `compile!'
+    app/controllers/servicesandproducts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (50.7ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-23 23:17:53) [GET]
+  [4;36;1mPastproject Load (0.6ms)[0m   [0;1mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 42ms (View: 35, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DisclaimersController#index (for 127.0.0.1 at 2010-11-23 23:18:09) [GET]
+  [4;35;1mDisclaimer Load (0.7ms)[0m   [0mSELECT * FROM `disclaimers` [0m
+Rendering template within layouts/rockonusa
+Rendering disclaimers/index
+Completed in 46ms (View: 29, DB: 1) | 200 OK [http://localhost/disclaimers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TermsController#index (for 127.0.0.1 at 2010-11-23 23:18:11) [GET]
+  [4;36;1mTerm Load (0.6ms)[0m   [0;1mSELECT * FROM `terms` [0m
+Rendering template within layouts/rockonusa
+Rendering terms/index
+Completed in 187ms (View: 31, DB: 1) | 200 OK [http://localhost/terms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-23 23:18:13) [GET]
+  [4;35;1mHome Load (0.4ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:20:01) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:20:01) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:20:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:20:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:20:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:21:26) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:21:26) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:21:31) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 87ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:38:41) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 31ms (View: 25, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:38:42) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:38:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:38:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:38:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:39:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:39:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:39:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:41:40) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:41:40) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:41:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:41:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:41:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:43:01) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:43:01) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:43:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:43:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:43:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:43:21) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:43:21) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:43:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:43:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:43:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:43:51) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:43:52) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-23 23:43:57) [GET]
+  [4;36;1mHome Load (0.4ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:44:03) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 91ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:44:37) [GET]
+  [4;36;1mServicesandproduct Load (0.4ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:44:37) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:44:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:44:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:44:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:45:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:45:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:45:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:45:37) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:45:38) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:45:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:45:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:45:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:46:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-ico-loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:46:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-btn-close.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-23 23:46:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/lightbox-blank.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:49:22) [GET]
+  [4;36;1mServicesandproduct Load (0.3ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-23 23:49:38) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (55.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (38.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-24 10:02:27) [GET]
+  [4;36;1mHome Load (178.4ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 825ms (View: 192, DB: 272) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (195.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (20.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-24 21:49:50) [GET]
+  [4;36;1mHome Load (180.1ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 438ms (View: 219, DB: 396) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-24 21:53:27) [GET]
+  [4;35;1mProject Load (370.6ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 2514ms (View: 2018, DB: 371) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (37.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-24 21:53:30) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 43ms (View: 10, DB: 38) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-11-24 21:53:38) [GET]
+  [4;35;1mAboutu Load (105.4ms)[0m   [0mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 181ms (View: 29, DB: 106) | 200 OK [http://localhost/aboutus]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-11-24 21:54:54) [GET]
+  [4;36;1mAboutu Load (0.7ms)[0m   [0;1mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 34ms (View: 18, DB: 1) | 200 OK [http://localhost/aboutus]
+  [4;35;1mSQL (16.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-24 21:54:57) [GET]
+  [4;35;1mPastproject Load (0.7ms)[0m   [0mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 44ms (View: 37, DB: 17) | 200 OK [http://localhost/pastprojects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-24 21:55:05) [GET]
+  [4;36;1mServicesandproduct Load (0.6ms)[0m   [0;1mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 42ms (View: 26, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-24 21:55:08) [GET]
+  [4;35;1mPastproject Load (0.4ms)[0m   [0mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-24 21:55:10) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 32ms (View: 6, DB: 1) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-24 21:55:11) [GET]
+  [4;35;1mHome Load (0.4ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 105ms (View: 79, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-24 21:56:15) [GET]
+  [4;36;1mHome Load (0.4ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-11-24 21:56:17) [GET]
+  [4;35;1mAboutu Load (0.4ms)[0m   [0mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/aboutus]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactusController#index (for 127.0.0.1 at 2010-11-24 21:56:30) [GET]
+  [4;36;1mContactu Load (0.9ms)[0m   [0;1mSELECT * FROM `contactus` [0m
+Rendering template within layouts/rockonusa
+Rendering contactus/index
+Completed in 54ms (View: 28, DB: 1) | 200 OK [http://localhost/contactus]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactusController#index (for 127.0.0.1 at 2010-11-24 21:56:41) [GET]
+  [4;35;1mContactu Load (0.3ms)[0m   [0mSELECT * FROM `contactus` [0m
+Rendering template within layouts/rockonusa
+Rendering contactus/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/contactus]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-11-24 21:56:47) [GET]
+  [4;36;1mAboutu Load (0.5ms)[0m   [0;1mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/aboutus]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-11-24 21:57:15) [GET]
+  [4;35;1mAboutu Load (0.4ms)[0m   [0mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/aboutus]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-11-24 21:57:22) [GET]
+  [4;36;1mAboutu Load (0.4ms)[0m   [0;1mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/aboutus]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactusController#index (for 127.0.0.1 at 2010-11-24 21:57:24) [GET]
+  [4;35;1mContactu Load (0.5ms)[0m   [0mSELECT * FROM `contactus` [0m
+Rendering template within layouts/rockonusa
+Rendering contactus/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/contactus]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DisclaimersController#index (for 127.0.0.1 at 2010-11-24 21:57:36) [GET]
+  [4;36;1mDisclaimer Load (0.7ms)[0m   [0;1mSELECT * FROM `disclaimers` [0m
+Rendering template within layouts/rockonusa
+Rendering disclaimers/index
+Completed in 55ms (View: 28, DB: 1) | 200 OK [http://localhost/disclaimers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TermsController#index (for 127.0.0.1 at 2010-11-24 21:57:38) [GET]
+  [4;35;1mTerm Load (0.5ms)[0m   [0mSELECT * FROM `terms` [0m
+Rendering template within layouts/rockonusa
+Rendering terms/index
+Completed in 55ms (View: 34, DB: 1) | 200 OK [http://localhost/terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-24 21:57:44) [GET]
+  [4;36;1mHome Load (0.4ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-24 21:57:49) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-24 21:57:51) [GET]
+  [4;36;1mPastproject Load (0.6ms)[0m   [0;1mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-24 21:57:52) [GET]
+  [4;35;1mServicesandproduct Load (0.3ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-24 21:58:42) [GET]
+  [4;36;1mPastproject Load (0.4ms)[0m   [0;1mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-24 21:58:44) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-24 21:58:47) [GET]
+  [4;36;1mPastproject Load (0.3ms)[0m   [0;1mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-24 21:58:49) [GET]
+  [4;35;1mServicesandproduct Load (0.6ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-24 22:01:22) [GET]
+  [4;36;1mPastproject Load (0.3ms)[0m   [0;1mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-11-24 22:01:24) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-11-24 22:01:25) [GET]
+  [4;36;1mPastproject Load (0.4ms)[0m   [0;1mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-11-24 22:01:27) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-24 22:01:29) [GET]
+  [4;36;1mHome Load (0.4ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]

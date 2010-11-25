@@ -1,0 +1,41 @@
+#slider {
+        float: left;
+        position: relative;
+        width: 230px;
+        margin: 0 0 0 0;
+        padding: 70px 0 0 0;
+    }
+    
+    #slider li {
+        list-style: none;
+        float: left;
+        padding: 5px 5px 0 0;
+    }
+    
+    #text_slider {
+        list-style: none;
+        float: right;
+        width: 550px;
+        margin: 0 0 0 0;
+        padding: 20px 0 0 0;
+        text-align: justify;
+        font-family: Helvetica;
+        font-size: 14px;
+        color: #5C3317;
+        line-height: 18px;
+        position: relative;
+    }
+    
+    #text_slider h1 {
+        font-family: Helvetica;
+        color: #5C3317;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 18px;
+    }
+    
+    #text_slider li {
+        list-style: none;
+        float: right;
+        padding: 10px 30px 10px 0px;
+    }

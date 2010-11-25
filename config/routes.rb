@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :pastprojects
+
+  map.resources :servicesandproducts
+
   map.resources :terms
 
   map.resources :disclaimers

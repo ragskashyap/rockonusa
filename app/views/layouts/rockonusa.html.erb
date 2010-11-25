@@ -28,20 +28,14 @@
                         <%= link_to "Projects", { :action => "index" , :controller => "projects" } %>
                     </li>
                     <li id="kwick3">
-                        <%= link_to "About Us", { :action => "index" , :controller => "aboutus" } %>
+                        <%= link_to "Past Projects", { :action => "index" , :controller => "pastprojects" } %>
                     </li>
                     <li id="kwick4">
-                        <%= link_to "Contact", { :action => "index" , :controller => "contactus" } %>
+                        <%= link_to "Services and Products", { :action => "index" , :controller => "servicesandproducts" } %>
                     </li>
                 </ul>
             </div>
-            <!-- div id="menu">
-            <%= link_to "Home", { :action => "index" , :controller => "home" } %>
-            &nbsp; &nbsp; &nbsp; &nbsp; <%= link_to "Projects", { :action => "index" , :controller => "projects" } %>
-            &nbsp; &nbsp; &nbsp; &nbsp; <%= link_to "About Us", { :action => "index" , :controller => "aboutus" } %>
-            </div>
-            -->
-            <div class="clear">
+         <div class="clear">
             </div>
             <div id="main">
                 <%= yield :layout %>
@@ -53,6 +47,8 @@
                    &copy; 2010 Copyright Rockon USA
               </div>
               <div style="text-align:right;">
+                    &nbsp;<%= link_to "About Us", { :action => "index" , :controller => "aboutus" } %> |
+                    &nbsp;<%= link_to "Contact Us", { :action => "index" , :controller => "contactus" } %> | 
                     &nbsp;<%= link_to "Disclaimers", { :action => "index" , :controller => "disclaimers" } %> |
                     &nbsp;<%= link_to "Terms and Conditions", { :action => "index" , :controller => "terms" } %>
                     </div>

@@ -1,0 +1,201 @@
+<%= stylesheet_link_tag 'slider', :media => "all" %>
+
+<script language="JavaScript" type="text/javascript">
+    <!--
+    
+    var selImg = 1;
+    var prevSelImg = 1;
+    
+    // PRELOADING IMAGES
+    if (document.images) {
+    
+        img1_on = new Image();
+        img1_on.src = "../images/projects/Tmb_prj1.jpg";
+        img1_off = new Image();
+        img1_off.src = "../images/projects/OTmb_prj1.jpg";
+        
+        img2_on = new Image();
+        img2_on.src = "../images/projects/Tmb_prj2.jpg";
+        img2_off = new Image();
+        img2_off.src = "../images/projects/OTmb_prj2.jpg";
+        
+        img3_on = new Image();
+        img3_on.src = "../images/projects/Tmb_prj3.jpg";
+        img3_off = new Image();
+        img3_off.src = "../images/projects/OTmb_prj3.jpg";
+        
+        img4_on = new Image();
+        img4_on.src = "../images/projects/Tmb_prj4.jpg";
+        img4_off = new Image();
+        img4_off.src = "../images/projects/OTmb_prj4.jpg";
+        
+        img5_on = new Image();
+        img5_on.src = "../images/projects/Tmb_prj5.jpg";
+        img5_off = new Image();
+        img5_off.src = "../images/projects/OTmb_prj5.jpg";
+        
+        img6_on = new Image();
+        img6_on.src = "../images/projects/Tmb_prj6.jpg";
+        img6_off = new Image();
+        img6_off.src = "../images/projects/OTmb_prj6.jpg";
+        
+        img7_on = new Image();
+        img7_on.src = "../images/projects/Tmb_prj7.jpg";
+        img7_off = new Image();
+        img7_off.src = "../images/projects/OTmb_prj7.jpg";
+        
+        img8_on = new Image();
+        img8_on.src = "../images/projects/Tmb_prj8.jpg";
+        img8_off = new Image();
+        img8_off.src = "../images/projects/OTmb_prj8.jpg";
+        
+        img9_on = new Image();
+        img9_on.src = "../images/projects/Tmb_prj9.jpg";
+        img9_off = new Image();
+        img9_off.src = "../images/projects/OTmb_prj9.jpg";
+        
+    }
+    
+    function movr(k){
+        if (document.images) 
+            eval('document.img' + k + '.src=img' + k + '_on.src');
+    }
+    
+    function mout(k){
+        if ((document.images) && (selImg != k)) 
+            eval('document.img' + k + '.src=img' + k + '_off.src');
+    }
+    
+    function mclick(k){
+        selImg = k;
+        if (document.images) {
+            eval('document.img' + k + '.src=img' + k + '_on.src');
+            eval('document.img' + prevSelImg + '.src=img' + prevSelImg + '_off.src');
+            eval('$("#prj' + prevSelImg + '").hide();');
+            eval('$("#prj' + k + '").show("slide", { direction: "right"}, 1000);')
+            prevSelImg = k;
+            
+        }
+    }
+    
+    
+    
+    //-->
+</script>
+<div id="slider">
+    <ul>
+        <li class="img_prj1">
+            <a onMouseOver="movr(1);return true;" onMouseOut="mout(1);return true;" onClick="mclick(1);return true;"><img name=img1 border=0 alt="Terrace Condominiums of Forest Park, IL: (123 units)" title="Terrace Condominiums of Forest Park, IL: (123 units)" src="../images/projects/Tmb_prj1.jpg"></a>
+        </li>
+        <li class="img_prj2">
+            <a onMouseOver="movr(2);return true;" onMouseOut="mout(2);return true;" onClick="mclick(2);return true;"><img name=img2 border=0 alt="Raintree Condominiums of Glen Ellyn, IL: (318 Units)" title="Raintree Condominiums of Glen Ellyn, IL: (318 Units)" src="../images/projects/OTmb_prj2.jpg"></a>
+        </li>
+        <li class="img_prj3">
+            <a onMouseOver="movr(3);return true;" onMouseOut="mout(3);return true;" onClick="mclick(3);return true;"><img name=img3 border=0 alt="Medinah Terrace Condominiums, Itasca, IL: (230 units)" title="Medinah Terrace Condominiums, Itasca, IL: (230 units)" src="../images/projects/OTmb_prj3.jpg"></a>
+        </li>
+        <li class="img_prj4">
+            <a onMouseOver="movr(4);return true;" onMouseOut="mout(4);return true;" onClick="mclick(4);return true;"><img name=img4 border=0 alt="Townhomes of Whispering Lake: (124 units)" title="Townhomes of Whispering Lake: (124 units)" src="../images/projects/OTmb_prj4.jpg"></a>
+        </li>
+        <li class="img_prj5">
+            <a onMouseOver="movr(5);return true;" onMouseOut="mout(5);return true;" onClick="mclick(5);return true;"><img name=img5 border=0 alt="Park Terrace Condominiums, Broadview, IL: (72 units)" title="Park Terrace Condominiums, Broadview, IL: (72 units)" src="../images/projects/OTmb_prj5.jpg"></a>
+        </li>
+        <li class="img_prj6">
+            <a onMouseOver="movr(6);return true;" onMouseOut="mout(6);return true;" onClick="mclick(6);return true;"><img name=img6 border=0 alt="910 South Michigan Avenue, Chicago, IL: (267 units)" title="910 South Michigan Avenue, Chicago, IL: (267 units)" src="../images/projects/OTmb_prj6.jpg"></a>
+        </li>
+        <li class="img_prj7">
+            <a onMouseOver="movr(7);return true;" onMouseOut="mout(7);return true;" onClick="mclick(7);return true;"><img name=img7 border=0 alt="Commodore/Greenbrier Condominiums, Chicago, IL: (183 units)" title="Commodore/Greenbrier Condominiums, Chicago, IL: (183 units)" src="../images/projects/OTmb_prj7.jpg"></a>
+        </li>
+        <li class="img_prj8">
+            <a onMouseOver="movr(8);return true;" onMouseOut="mout(8);return true;" onClick="mclick(8);return true;"><img name=img8 border=0 alt="Deer Run Condominiums, Oswego, IL: (240 Units)" title="Deer Run Condominiums, Oswego, IL: (240 Units)" src="../images/projects/OTmb_prj8.jpg"></a>
+        </li>
+        <li class="img_prj9">
+            <a onMouseOver="movr(9);return true;" onMouseOut="mout(9);return true;" onClick="mclick(9);return true;"><img name=img9 border=0 alt="525 Hawthorne Place, Chicago, IL: (232 units)" title="525 Hawthorne Place, Chicago, IL: (232 units)" src="../images/projects/OTmb_prj9.jpg"></a>
+        </li>
+    </ul>
+</div>
+<div id="text_slider">
+    <ul>
+        <li id="prj1">
+            <p>
+                <h1>Terrace Condominiums of Forest Park, IL: (123 units)</h1>
+                <br>
+                Conversion of this 123 fractured condominium building involved exterior masonry repair, T-111 siding repair and painting and window replacement/repair as needed. In addition, all units were renovated with brand new kitchen appliances, cabinetry, countertop, sink, kitchen faucets and kitchen tile work, new bathroom tile work for floors and tub walls, new vanity and vanity tops in bathrooms, new medicine cabinets and new light fixtures in bathrooms, kitchen and dining areas. All bedrooms were provided with new carpeting. All corridor walls were treated with fresh paint and received new carpeting. The entry lobby was renovated with new tiles, wallpaper and light fixtures. Laundry rooms were completely renovated with new machines, floor tiles and paint.
+            </p>
+            <img border=0 alt="Terrace Condominiums of Forest Park, IL: (123 units)" title="Terrace Condominiums of Forest Park, IL: (123 units)" src="../images/projects/img_prj1.jpg">
+        </li>
+        <li id="prj2">
+            <p>
+                <h1>Raintree Condominiums of Glen Ellyn, IL: (318 Units)</h1>
+                <br>
+                Conversion of this sprawling 318 unit fractured condominium complex, located on 25 acres of land surrounding a golf course, involved similar work as mentioned above, but on a far larger scale. Additionally, extensive asphalt repair/resurfacing was undertaken. The huge clubhouse received new hardwood flooring, light fixtures, fireplace renovation, fresh paint and wallpaper, renovation of swimming pool and pool deck. In addition, washers and dryers were added in each unit. All of the 22 buildings received new entry canopies, new corridor light fixtures, carpeting, painting and extensive landscaping and roof work were undertaken. All units received new kitchens, baths, light fixtures, carpeting and paint.
+            </p>
+            <img border=0 alt="Raintree Condominiums of Glen Ellyn, IL: (318 Units)" title="Raintree Condominiums of Glen Ellyn, IL: (318 Units)" src="../images/projects/img_prj2.jpg">
+        </li>
+        <li id="prj3">
+            <p>
+                <h1>Medinah Terrace Condominiums, Itasca, IL: (230 units)</h1>
+                <br>
+                This 230 unit fractured condominium complex, located on 13 acres adjacent to Medinah Golf Course, received renovation similar to the Raintree complex mentioned above, with the addition of extensive landscaping and pool renovation. Washers and dryers were also added to each unit. 
+            </p>
+            <img border=0 alt="Medinah Terrace Condominiums, Itasca, IL: (230 units)" title="Medinah Terrace Condominiums, Itasca, IL: (230 units)" src="../images/projects/img_prj3.jpg">
+        </li>
+        <li id="prj4">
+            <p>
+                <h1>Townhomes of Whispering Lake: (124 units)</h1>
+                <br>
+                This project located in Lake Bluff, IL involved completing the construction of the half-finished condominium project and new construction of 85 town homes (total 124 units) on 20 acres of land. Several windows were replaced in the condominium project, roads were completed, corridors carpeted and new entry doors installed. Units were taken from the whitewall stage to finishing, certain buildings were mud jacked as needed, the parking lot was completed and all new heating systems were installed in the units. Further, existing well was upgraded and a new well was installed. Detention ponds were repaired and pond aerators were installed. Water and sewer were also brought to the new town homes. Each town home of approximately 2,000 sq. ft., was completed and sold.
+            </p>
+            <img border=0 alt="Townhomes of Whispering Lake: (124 units)" title="Townhomes of Whispering Lake: (124 units)" src="../images/projects/img_prj4.jpg">
+        </li>
+        <li id="prj5">
+            <p>
+                <h1>Park Terrace Condominiums, Broadview, IL: (72 units)</h1>
+                <br>
+                The work on this 72 unit conversion involved extensive parking lot work, roof replacement, new kitchens and bathrooms, complete window replacement, all new corridor carpeting, light fixtures, landscaping and rebuilding the rear 3-story deck. 
+            </p>
+            <img border=0 alt="Park Terrace Condominiums, Broadview, IL: (72 units)" title="Park Terrace Condominiums, Broadview, IL: (72 units)" src="../images/projects/img_prj5.jpg">
+        </li>
+        <li id="prj6">
+            <p>
+                <h1>910 South Michigan Avenue, Chicago, IL: (267 units)</h1>
+                <br>
+                This 267 unit project, representing the largest office to residential conversion in the history of Chicago, involved gutting the entire 600,000 sq. ft. building, which housed the former world headquarters of Standard Oil. New installations included plumbing, HVAC, electrical, fire protection, elevators, parking garages, ramps, stairs, entry lobby unit corridors, unit interiors and doors. This complex project was massive in scope, involving at on time, 600 construction workers on the property simultaneously. The entire construction of $55 m was completed using our in-house construction company and there was no general contractor involved. With the exception of carpentry, drywall, and paint, all other trades were subcontracted.
+            </p>
+            <img border=0 alt="910 South Michigan Avenue, Chicago, IL: (267 units)" title="910 South Michigan Avenue, Chicago, IL: (267 units)" src="../images/projects/img_prj6.jpg">
+        </li>
+        <li id="prj7">
+            <p>
+                <h1>Commodore/Greenbrier Condominiums, Chicago, IL: 
+                    <br>
+                    (183 units)
+                </h1>
+                <br>
+                This 183 unit fractured condominium project, located in the prestigious Lincoln Park area of Chicago, IL, boasts architectural beauty, original historic façade and exquisite tile work in the entry way. All units were provided with washers, dryers, and new kitchens and bathrooms. 
+            </p>
+            <img border=0 alt="Commodore/Greenbrier Condominiums, Chicago, IL: (183 units)" title="Commodore/Greenbrier Condominiums, Chicago, IL: (183 units)" src="../images/projects/img_prj7.jpg">
+        </li>
+        <li id="prj8">
+            <p>
+                <h1>Deer Run Condominiums, Oswego, IL: (240 Units)</h1>
+                <br>
+                This 240 unit conversion project, located on 22 acres involved extensive exterior, as well as interior renovation. New balconies were added and concrete patios poured. All windows, roofs, and heating systems were replaced. In addition, the parking lot was resurfaced, extensive landscaping was completed and new stacks were installed for washers and dryers in each unit. All new kitchens and bathrooms were installed, new stairs were constructed, the swimming pool and clubhouse was extensively renovated and all entry doors were replaced. 
+            </p>
+            <img border=0 alt="Deer Run Condominiums, Oswego, IL: (240 Units)" title="Deer Run Condominiums, Oswego, IL: (240 Units)" src="../images/projects/img_prj8.jpg">
+        </li>
+        <li id="prj9">
+            <p>
+                <h1>525 Hawthorne Place, Chicago, IL: (232 units)</h1>
+                <br>
+                This 231 unit conversion project involved replacement of all windows, elevator cab renovation, extensive corridor marble work on each floor, marble work at the entry corridor, new kitchens and bathrooms in every unit, hardwood flooring in each unit, new light fixtures, extensive swimming pool renovation, upgrading the oversized pool deck, building the pool entertainment area, laundry room renovation, extensive parking garage renovation and installation of new entry canopy. 
+            </p>
+            <img border=0 alt="525 Hawthorne Place, Chicago, IL: (232 units)" title="525 Hawthorne Place, Chicago, IL: (232 units)" src="../images/projects/img_prj9.jpg">
+        </li>
+    </ul>
+    <script type="text/javascript" language="JavaScript">
+        var i = 2;
+        // HIDING ALL PROJECTS
+        for (i = 2; i <= 9; i++) {
+            eval('$("#prj' + i + '").hide();');
+        }
+    </script>
+</div>

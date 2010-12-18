@@ -17227,3 +17227,84 @@ Processing HomeController#index (for 127.0.0.1 at 2010-12-11 23:45:37) [GET]
 Rendering template within layouts/rockonusa
 Rendering home/index
 Completed in 24ms (View: 5, DB: 1) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-12-12 00:24:34) [GET]
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-12-12 00:24:35) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/rockonusa
+Rendering projects/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PastprojectsController#index (for 127.0.0.1 at 2010-12-12 00:24:36) [GET]
+  [4;36;1mPastproject Load (0.4ms)[0m   [0;1mSELECT * FROM `pastprojects` [0m
+Rendering template within layouts/rockonusa
+Rendering pastprojects/index
+Completed in 153ms (View: 6, DB: 1) | 200 OK [http://localhost/pastprojects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServicesandproductsController#index (for 127.0.0.1 at 2010-12-12 00:24:38) [GET]
+  [4;35;1mServicesandproduct Load (0.4ms)[0m   [0mSELECT * FROM `servicesandproducts` [0m
+Rendering template within layouts/rockonusa
+Rendering servicesandproducts/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/servicesandproducts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutusController#index (for 127.0.0.1 at 2010-12-12 00:24:43) [GET]
+  [4;36;1mAboutu Load (0.4ms)[0m   [0;1mSELECT * FROM `aboutus` [0m
+Rendering template within layouts/rockonusa
+Rendering aboutus/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/aboutus]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactusController#index (for 127.0.0.1 at 2010-12-12 00:24:45) [GET]
+  [4;35;1mContactu Load (0.4ms)[0m   [0mSELECT * FROM `contactus` [0m
+Rendering template within layouts/rockonusa
+Rendering contactus/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/contactus]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DisclaimersController#index (for 127.0.0.1 at 2010-12-12 00:24:47) [GET]
+  [4;36;1mDisclaimer Load (0.4ms)[0m   [0;1mSELECT * FROM `disclaimers` [0m
+Rendering template within layouts/rockonusa
+Rendering disclaimers/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/disclaimers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TermsController#index (for 127.0.0.1 at 2010-12-12 00:24:49) [GET]
+  [4;35;1mTerm Load (0.5ms)[0m   [0mSELECT * FROM `terms` [0m
+Rendering template within layouts/rockonusa
+Rendering terms/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/terms]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-12 00:24:53) [GET]
+  [4;36;1mHome Load (0.4ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/rockonusa
+Rendering home/index
+Completed in 89ms (View: 82, DB: 1) | 200 OK [http://localhost/home]

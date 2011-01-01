@@ -18,10 +18,10 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: rockonusa_development
+  database: everest4_rockonusa
   pool: 5
-  username: root
-  password:
+  username: everest4_phoenix
+  password: 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -41,5 +41,5 @@ production:
   reconnect: false
   database: rockonusa_production
   pool: 5
-  username: root
+  username: everest4_phoenix
   password: 
